@@ -16,9 +16,22 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
 from core.views import *
+from exam.views import *
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_page, name='home'),
-]
+    path('exam/', exam_page, name='exam'),
+
+    path('get-user-details/', get_user_details, name='get-user-details'),
+    path('thank-you/', thank_you, name='thank-you'),
+    path('weekly-winners/', winners_page, name='weekly-winners'),
+    
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# For the admin panel, create a new model called Answer and add fields for question_id and answer.
+#add some custom url in admin urls
