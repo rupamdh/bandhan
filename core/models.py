@@ -12,4 +12,9 @@ class Winner(models.Model):
     
     class Meta:
         verbose_name_plural = 'Winners'
-        
+
+class Core(models.Model):
+    exam_password = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.exam_password
