@@ -5,11 +5,41 @@
 
 
 {% block content %}
+    
+    {% if messages %}
+        <div class="py-5">
+            <div class="container-xl">
+                {% for message in messages %}
+                    <p class="text-danger">{{message}}</p>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+       
+
     <section class="home-banner">
-        <div class="container">
+        <div class="bg-half-circle"></div>
+        <div class="container position-relative">
+            
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <div class="bg-half-circle"></div>
+                    <h2>Welcome to the circle of <br> success & happiness </h2>
+                    <p class="mb-5"> No matter where you enter the circle, we are here for you </p>
+                    <a href="#" class="product-link"> <em> Explore our products </em> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dada mt-5">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <div class="col-md-8">
+                    <h2 class="mb-4"> Dada's trusted bank </h2>
+                    <h6>Bandhan Bank is trusted by over 3.35+ crore customers, one among who is Dada. In his career, Sourav Ganguly scored consistently and won the trust of people. Just like Bandhan Bank which has won the trust of crores over the seven years of its existence.</h6>
+                </div>
+                <div class="col-md-4">
+                    <img src="/static/assets/images/dada.png" alt="">
                 </div>
             </div>
         </div>
@@ -19,43 +49,81 @@
         <div class="container">
             <h3 class="small-title"><em>Personal Banking</em></h3>
             <h2>Bank when you want, <br> the way you want​​</h2>
-            <p class="mb-5"> Easy accounts, deposits, cards, loans and insurance for you and your family </p>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="col-box">
-                        <div class="icon"><img src="/static/assets/images/savings.png" alt=""></div>
-                        <h3 class="text-capitalize"> Savings Accounts</h3>
-                        <p> Use our attractive interest rates on your savings to step closer to your dreams </p>
+            <p class="mb-5 d-none d-lg-block"> Easy accounts, deposits, cards, loans and insurance for you and your family </p>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="col-box">
+                            <div class="icon"><img src="/static/assets/images/savings.png" alt=""></div>
+                            <h3 class="text-capitalize"> Savings Accounts</h3>
+                            <p> Use our attractive interest rates on your savings to step closer to your dreams </p>
+                            <a href="#" class="btn btn-outline-secondary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="col-box">
+                            <div class="icon"><img src="/static/assets/images/homeloan.png" alt=""></div>
+                            <h3 class="text-capitalize"> Home Loan</h3>
+                            <p>  Wake up in your own dream home with easy-to-avail Home Loans  </p>
+                            <a href="#" class="btn btn-outline-secondary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="col-box">
+                            <div class="icon"><img src="/static/assets/images/Group 1298@2x_0.png" alt=""></div>
+                            <h3 class="text-capitalize"> Gold Loan   </h3>
+                            <p>  ​​Get our instant Gold Loan with quick processing and minimal documentation </p>
+                            <a href="#" class="btn btn-outline-secondary">Learn More</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="col-box">
-                        <div class="icon"><img src="/static/assets/images/homeloan.png" alt=""></div>
-                        <h3 class="text-capitalize"> Home Loan</h3>
-                        <p>  Wake up in your own dream home with easy-to-avail Home Loans  </p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="col-box">
-                        <div class="icon"><img src="/static/assets/images/Group 1298@2x_0.png" alt=""></div>
-                        <h3 class="text-capitalize"> Gold Loan   </h3>
-                        <p>  ​​Get our instant Gold Loan with quick processing and minimal documentation </p>
-                    </div>
-                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
+            
         </div>
     </section>
 
-    <div class="py-5">
-        <div class="container-xl">
-            {% if messages %}
-                {% for message in messages %}
-                    <p class="text-danger">{{message}}</p>
-                {% endfor %}
-            {% endif %}
+    <section class="personal nri">
+        <div class="container">
+            <h3 class="small-title"><em>NRI Banking</em></h3>
+            <h2> World-class banking <br>  for global achievers​​​</h2>
+            <p class="mb-5 d-none d-lg-block">  Keep your money secure in an Indian account and transact safely </p>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="col-box">
+                            <div class="icon"><img src="/static/assets/images/savings.png" alt=""></div>
+                            <h3 class="text-capitalize"> NRE/NRO Savings Accounts</h3>
+                            <p> Save and manage funds earned in India or abroad while enjoying good returns</p>
+                            <a href="#" class="btn btn-outline-secondary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="col-box">
+                            <div class="icon"><img src="/static/assets/images/Group 2425.svg" alt=""></div>
+                            <h3 class="text-capitalize"> Foreign Currency Non-Resident (FCNR - B) Fixed Deposit​</h3>
+                            <p>  We help you grow your deposits – USD, GBP or Euro  </p>
+                            <a href="#" class="btn btn-outline-secondary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="col-box">
+                            <div class="icon"><img src="/static/assets/images/Group 2425.svg" alt=""></div>
+                            <h3 class="text-capitalize">Remittance (through Bank) </h3>
+                            <p>  ​Send home happiness with just a few clicks from anywhere in the world</p>
+                            <a href="#" class="btn btn-outline-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            
         </div>
-    </div>
+    </section>
+
+    
     
    
     

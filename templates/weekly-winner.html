@@ -4,19 +4,21 @@
 {% endblock navbar %}
 
 {% block content %}
-    <div class="container text-center my-5">
-        <div class="row">
-            {% for winner in winners %}
-                <div class="col"> 
-                    <div class="card" style="width: 18rem; margin-inline: auto;">
-                        <img src="/uploads/{{winner.image}}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ winner.name }}</h5>
-                            <p class="card-text">{{ winner.desc }}</p>
+    <div class="py-5">
+        <div class="container text-center">
+            <div class="row gy-4">
+                {% for winner in winners %}
+                    <div class="col-md-4"> 
+                        <div class="card" style="width: 18rem; margin-inline: auto;">
+                            <img src="/uploads/{{winner.image}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ winner.name }}</h5>
+                                <p class="card-text">{{ winner.desc }}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            {% endfor %}
+                {% endfor %}
+            </div>
         </div>
     </div>
 {% endblock content %}

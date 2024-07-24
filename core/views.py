@@ -21,8 +21,8 @@ def get_user_details(request):
                 return redirect('home')
         except Answer.DoesNotExist:
             get_password = Core.objects.get(id=1)
-            print(get_password)
-            print(password)
+            # print(get_password)
+            # print(password)
             if password == get_password.exam_password:
                 request.session['name'] = name
                 request.session['email'] = email

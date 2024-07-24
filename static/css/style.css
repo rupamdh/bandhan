@@ -8,6 +8,21 @@
 body {
     font-family: "Lato", sans-serif;
 }
+.container{
+    max-width: 1200px !important;
+}
+.btn-outline-secondary{
+    color: #093252;
+    background-color: #fff;
+    border: 2px solid #093252;
+    outline: 0;
+}
+.btn-outline-secondary:hover{
+    color: #3399E8;
+    background-color: #fff;
+    border: 2px solid #3399E8;
+    outline: 0;
+}
 
 .navitem-padding {
     padding-block: 20px;
@@ -83,9 +98,62 @@ body {
 h2{
     font-size: 54px;
     color: #000;
+    line-height: 1.2;
 }
-.personal{
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+.home-banner{
     padding: 90px 0;
+    position: relative;
+    min-height: 500px;
+}
+.bg-half-circle{
+    width: 1200px;
+    height: 900px;
+    border-radius: 0 0 100% 100%;
+    background: transparent linear-gradient(180deg, #FFFFFF 60%, #C1E1FFF0 100%) 0% 0% no-repeat padding-box;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.home-banner h2{
+    color: #004880;
+    font-size: 38px;
+    line-height: 1.2;
+}
+.product-link{
+    color: #004880;
+    font-weight: 600;
+}
+.product-link:hover{
+    text-decoration: underline;
+}
+
+.dada{
+    padding: 60px 0;
+    background-color: #f3f9ff;
+}
+.dada h2{
+    font-size: 66px;
+}
+.dada h6{
+    font-size: 22px;
+    color: #092e4f;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+
+.personal{
+    padding: 140px 0 90px;
     background-image: url(../assets/images/Homepage_Personal-section_1920X1100.jpg);
     background-position: top right;
     background-repeat: no-repeat;
@@ -101,7 +169,7 @@ h2{
 }
 .col-box{
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 30px 10px;
+    padding: 30px 30px;
     border: 1px solid #D9D9D9;
     border-radius: 5px;
     text-align: center;
@@ -120,4 +188,45 @@ h2{
 .col-box p{
     font-size: 13px;
     color: #707070;
+}
+
+.nri{
+    background-image: url(../assets/images/nri-banner.png);
+}
+
+
+@media (max-width:767px){
+    h2{
+        font-size: 24px;
+        
+    }
+    .home-banner{
+        padding: 40px 0;
+        min-height: auto;
+    }
+    /* .home-banner h2 br{
+        display: none;
+    } */
+    .bg-half-circle{
+        width: 100%;
+        height: 400px;
+    }
+    .home-banner h2{
+        font-size: 24px;
+    }
+    .dada h2{
+        font-size: 24px;
+        text-align: center;
+    }
+    .dada h6{
+        text-align: center;
+    }
+
+    .personal{
+        background-size: 100%;
+        padding: 40px 0 0;
+    }
+    .mySwiper{
+        padding: 10px 5px 40px;
+    }
 }
