@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 .navitem-padding {
@@ -62,15 +62,7 @@ body {
     border-radius: 6px;
 }
 
-.answer {}
 
-.question {
-
-}
-
-.question-card {
-    
-}
 /* footer  */
 .footer-heading {
     font-size: 14px;
@@ -82,4 +74,50 @@ body {
     font-size: 12px;
     color: #c0c0c0;
     margin-bottom: 4px;
+}
+
+.home-banner{
+    position: relative;
+
+}
+h2{
+    font-size: 54px;
+    color: #000;
+}
+.personal{
+    padding: 90px 0;
+    background-image: url(../assets/images/Homepage_Personal-section_1920X1100.jpg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.small-title{
+    font-size: 18px;
+    color: #707070;
+    border-left: 3px solid #ED3B25;
+    padding-left: 10px;
+    line-height: 1;
+    font-weight: 600;
+}
+.col-box{
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+.icon img{
+    height: 40px;
+    width: auto;
+    margin-bottom: 10px;
+}
+.col-box h3{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.col-box p{
+    font-size: 13px;
+    color: #707070;
 }
